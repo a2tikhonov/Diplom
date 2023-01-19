@@ -9,10 +9,11 @@ import ru.skypro.homework.dto.NewPassword;
 import ru.skypro.homework.dto.User;
 
 @RestController
-@RequestMapping("/users/")
+@RequestMapping("/users")
+@CrossOrigin(value = "http://localhost:3000")
 public class UserController {
 
-    @GetMapping("/me/")
+    @GetMapping("/me")
     public ResponseEntity<User> getUser() {
         return new ResponseEntity<User>(HttpStatus.NOT_IMPLEMENTED);
     }
@@ -22,7 +23,7 @@ public class UserController {
         return new ResponseEntity<NewPassword>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    @PatchMapping("/me/")
+    @PatchMapping("/me")
     public ResponseEntity<User> updateUser(@RequestBody User user) {
         return new ResponseEntity<User>(HttpStatus.NOT_IMPLEMENTED);
     }

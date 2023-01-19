@@ -5,10 +5,10 @@ import lombok.Data;
 import java.util.Collection;
 
 @Data
-public class ResponseWrapperAds {
+public class ResponseWrapperAdsComment {
 
     private Integer count;
 
-    private Collection<Ads> results;
+    private Collection<AdsComment> results;
 
 }
